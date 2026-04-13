@@ -37,10 +37,24 @@ python digit_gui.py
 - **`train_mnist.py`** — creates `mnist_model.npz` next to the scripts (you can add it to `.gitignore` if you do not want to commit weights).
 - **`digit_gui.py`** — requires `mnist_model.npz`; if it is missing, the app tells you to run training first.
 
+## Screenshots
+
+Examples from **`digit_gui.py`** (draw a digit, then the model predicts the class):
+
+|  |  |
+|:--:|:--:|
+| **0** | **1** |
+| ![Digit 0](<screenshots/0 digit.png>) | ![Digit 1](<screenshots/1 digit.png>) |
+| **2** | **9** |
+| ![Digit 2](<screenshots/2 digit.png>) | ![Digit 9](<screenshots/9 digit.png>) |
+
+Paths use angle brackets because the filenames contain spaces.
+
 ## Project layout
 
 | Path | Role |
 |------|------|
+| `screenshots/` | README images (your screenshots go here) |
 | `nn/layers.py` | `Dense` and base `Layer` |
 | `nn/activations.py` | `ReLU`, `Sigmoid`, `Softmax` |
 | `nn/losses.py` | `MSELoss`, `CrossEntropyLoss` |
