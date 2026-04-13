@@ -63,7 +63,3 @@ Paths use angle brackets because the filenames contain spaces.
 | `nn/data.py` | MNIST loading, `train_test_split` |
 | `nn/persist.py` | `save_weights` / `load_weights` |
 | `nn/visualizer.py` | Architecture diagram helper |
-
-## License
-
-Specify a license in the repository if you publish it (for example MIT or Apache-2.0).
