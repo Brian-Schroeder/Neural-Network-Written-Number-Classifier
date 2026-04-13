@@ -1,0 +1,34 @@
+# Virtual environments (never commit — can embed absolute paths; huge)
+.venv/
+venv/
+env/
+
+# Secrets and local config (never commit)
+.env
+.env.*
+!.env.example
+*.pem
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+*.p12
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# MNIST caches (re-downloaded by train_mnist.py; large binaries)
+data/mnist/
+data/MNIST/
+
+# Trained weights (reproducible via train_mnist.py)
+*.npz
